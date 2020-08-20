@@ -9,29 +9,46 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
         href="http://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic%7CPlayfair+Display:regular,italic,700,700italic%7CArvo:regular,italic,700,700italic">
+    <!-- NOTE: move JS to footer, before closing body tag. This prevents render blocking scripts. See https://www.google.com/search?q=why+javascript+in+footer&oq=why+javascript+in+footer -->
     <script type="text/javascript" src="script.js"></script>
     <title>Atos - Home Page</title>
 </head>
 
 <body>
 
+   
+    <!-- NOTE: Columns should always total 12. So if you have col-8, you need a col-4. Or, if it just needs 1 column col-12.   -->
+    
     <!-- Header -->
     <section id="header" class="container-fluid px-0">
         <div class="container-fluid c-hero">
-            <div class="row align-items-center justify-content-center">
+            <div class="row align-items-center justify-content-center">               
+                
                 <div id="thecol" class="col-8">
                     <a href="#" class="c-logo c-logo-landing w-nav-brand"></a>
                 </div>
+                
+                <!-- 
+                    <div class="col-4">
+                        &nbsp;
+                    </div>
+                -->
+                
             </div>
         </div>
     </section>
 
+     
+    
     <!-- Section 1 (slide in background & form) -->
+    <!-- NOTE: Fine to use ID's for testing, as long as styling is done on a class not the ID   -->
     <section id="section1" class="container-fluid px-0 pad">
         <div class="container-fluid align-items-left">
             <div class="row justify-content-center">
-                <div class="col-8">
-                    <div class="row justify-content-left">
+                
+                <div class="col-8"><!-- REMOVE this line -->
+                    <div class="row justify-content-left"> <!-- REMOVE this line -->
+                        
                         <div class="col-7 justify-content-left">
                             <div class="container-fluid c-section1-left justify-content-left">
                                 <div class="c-landing-img"></div>
@@ -42,12 +59,15 @@
                                 </h3>
                             </div>
                         </div>
+                        
                         <div class="col-5">
                             <h1>This is the second shitty placeholder column</h1>
                             <h2>THis will become a form</h2>
                         </div>
-                    </div>
-                </div>
+                        
+                    </div><!-- REMOVE this line -->
+                </div><!-- REMOVE this line -->
+                
             </div>
         </div>
     </section>
@@ -103,6 +123,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
+    
+    <!-- NOTE: add you javascript here -->
+    
 </body>
 
 </html>
