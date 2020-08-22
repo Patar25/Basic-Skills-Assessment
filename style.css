@@ -14,6 +14,10 @@ section {
     border: 2px solid yellow;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /* overall simplified styling using a single class */
 
 .font-playfair {
@@ -109,6 +113,10 @@ a {
     font-size: 16px;
 }
 
+.form-input.apply-field:focus {
+    border-color: #fbe76c;
+}
+
 .form-input {
     margin-bottom: 17px;
     padding-top: 32px;
@@ -144,4 +152,29 @@ a {
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+
+/* Section 2 */
+
+.container-item.container--w-large {
+    z-index: 10;
+    width: 70%;
+}
+
+.container-item {
+    position: relative;
+}
+
+.heading-body {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #000;
+    font-size: 50px;
+    line-height: 1.2em;
+    font-weight: 400;
+}
+
+.spacer--large {
+    height: 60px
 }
