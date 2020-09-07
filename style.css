@@ -175,9 +175,6 @@ select:focus {
 }
 
 @media screen and (max-width: 767.5px) {
-    .w-container {
-        background-color: blue;
-    }
 
     .c-section1-left {
         width: 100%;
@@ -188,7 +185,17 @@ select:focus {
     .landing-form-wrapper {
         margin-top: 30px;
     }
+
+    .pad {
+        padding: 60px 0px;
+    }
+
+    .icon-box-right p {
+        max-width: 529px;
+    }
 }
+
+
 
 
 /* Section 2 */
@@ -282,36 +289,19 @@ img {
     font-size: 14px;
 }
 
+@media screen and (max-width: 549.5px) {
+    .icon-box-left {
+        float: none;
+    }
 
-/* .hero-social-content.landing-share {
-    position: relative;
-    text-align: right;
+    .icon-box-icon {
+        margin-bottom: 20px;
+    }
+
+    .spacer--large {
+        height: 20px
+    }
 }
-
-.hero-social-content {
-    z-index: 2;
-    transform: rotate(90deg);
-    color: #000;
-    font-weight: 500;
-    flex: 0 auto;
-    text-align: center;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-.hero-social-content-p {
-    letter-spacing: 1px;
-}
-
-
-.hero-social-content-line {
-    display: inline-block;
-    width: 50px;
-    height: 1px;
-    margin-bottom: 5px;
-    margin-left: 10px;
-    background-color: #000;
-} */
 
 .hero-social-content.landing-share {
     position: absolute;
