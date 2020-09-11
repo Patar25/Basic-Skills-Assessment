@@ -309,6 +309,12 @@ img {
     font-size: 14px;
 }
 
+@media screen and (max-width: 991px) {
+    .icon-box-right {
+        float: left;
+    }
+}
+
 @media screen and (max-width: 549.5px) {
     .icon-box-left {
         float: none;
@@ -347,6 +353,8 @@ img {
 .hero-social-content-p {
     display: inline-block;
     letter-spacing: 1px;
+    line-height: 26px;
+    font-weight: 300;
 }
 
 .hero-social-content-line {
@@ -575,4 +583,12 @@ img {
     margin-left: 40px;
     color: #b8b8b8;
     font-weight: 400;
+}
+
+.footer-address-text {
+    line-height: 34px;
+    font-family: Montserrat, sans-serif;
+    color: #80858f;
+    font-weight: 300;
+    font-size: 14px;
 }
