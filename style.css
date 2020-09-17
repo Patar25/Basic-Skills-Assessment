@@ -68,6 +68,13 @@ a {
 
 /* Section 1 */
 
+.section-background-left {
+    background-image: url(/images/section-1-background.svg);
+    background-position: 0px 50%;
+    background-size: 1200px;
+    background-repeat: no-repeat;
+}
+
 .c-spacer {
     margin-top: 40px;
 }
@@ -394,6 +401,16 @@ img {
     background-color: #f7f7f7;
 }
 
+.c-section.bg-grey.u-m-left-right {
+    margin-right: 16px;
+    margin-left: 17px;
+}
+
+.c-section.u-m-left-right {
+    margin-right: 16px;
+    margin-left: 17px;
+}
+
 .statement-wrapper {
     position: static;
 }
@@ -591,4 +608,26 @@ img {
     color: #80858f;
     font-weight: 300;
     font-size: 14px;
+}
+
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-50px);
+    }
+}
+
+.fade-in-element {
+    animation: fade-in 1s ease;
+}
+
+.hidden {
+    opacity: 0;
 }

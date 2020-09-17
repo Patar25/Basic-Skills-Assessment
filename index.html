@@ -35,7 +35,7 @@
 
     <!-- Section 1 (slide in background & form) -->
     <!-- NOTE: Fine to use ID's for testing, as long as styling is done on a class not the ID   -->
-    <section id="section1" class="px-0 pad">
+    <section id="section1" class="px-0 pad section-background-left">
         <div class="container w-container align-items-left">
             <div class="row">
                 <div class="mx-auto col-md-6 col-lg-7 col-12">
@@ -95,7 +95,7 @@
                                 <div class="col-12 statement-wrapper">
                                     <div class="row">
                                         <div class="col-md-5 col-12">
-                                            <div class="icon-box" style="opacity: 1; transform: translate3d(0px, 0px, 0px)
+                                            <div class="icon-box hidden" style="opacity: 1; transform: translate3d(0px, -50px, 0px)
                                                 scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
                                                 transform-style: preserve-3d;">
                                                 <div class="icon-box-left">
@@ -119,7 +119,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-5 col-12">
-                                            <div class="icon-box" style="opacity: 1; transform: translate3d(0px, 0px, 0px)
+                                            <div class="icon-box hidden" style="opacity: 1; transform: translate3d(0px, -50px, 0px)
                                                 scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
                                                 transform-style: preserve-3d;">
                                                 <div class="icon-box-left">
@@ -145,7 +145,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-5 col-12">
-                                            <div class="icon-box" style="opacity: 1; transform: translate3d(0px, 0px, 0px)
+                                            <div class="icon-box hidden" style="opacity: 1; transform: translate3d(0px, -50px, 0px)
                                                 scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
                                                 transform-style: preserve-3d;">
                                                 <div class="icon-box-left">
@@ -169,7 +169,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-5 col-12">
-                                            <div class="icon-box" style="opacity: 1; transform: translate3d(0px, 0px, 0px)
+                                            <div class="icon-box hidden" style="opacity: 1; transform: translate3d(0px, -50px, 0px)
                                                 scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
                                                 transform-style: preserve-3d;">
                                                 <div class="icon-box-left">
@@ -195,7 +195,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-5 col-12">
-                                            <div class="icon-box" style="opacity: 1; transform: translate3d(0px, 0px, 0px)
+                                            <div class="icon-box hidden" style="opacity: 1; transform: translate3d(0px, -50px, 0px)
                                                 scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
                                                 transform-style: preserve-3d;">
                                                 <div class="icon-box-left">
@@ -219,7 +219,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-5 col-12">
-                                            <div class="icon-box" style="opacity: 1; transform: translate3d(0px, 0px, 0px)
+                                            <div class="icon-box hidden" style="opacity: 1; transform: translate3d(0px, -50px, 0px)
                                                 scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
                                                 transform-style: preserve-3d;">
                                                 <div class="icon-box-left">
@@ -273,86 +273,84 @@
     </section>
 
     <!-- Section 3 (Slidey testimonial module) -->
-    <section id="section3" class="container-fluid px-0 pad bg-grey">
-        <div class="u-m--left-right">
-            <div class="container w-container">
-                <div class="row justify-content-center">
-                    <div class="col-12 testimonial-container">
-                        <div class="row">
-                            <div class="col-md-2 col-12 statement-wrapper">
-                                <div class="row statement-wrapper-logo">
-                                    <div class="quote-wrapper u--center"
-                                        style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                                        <img src="/images/quote.svg">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="test-statement proof-text">
-                                        <div class="statement-line intheline"></div>
-                                        <p class="hero-social-content-p intheline secondp">Don't just take our word for
-                                            it
-                                        </p>
-                                    </div>
+    <section id="section3" class="px-0 pad c-section bg-grey u-m-left-right">
+        <div class="container w-container">
+            <div class="row justify-content-center">
+                <div class="col-12 testimonial-container">
+                    <div class="row">
+                        <div class="col-md-2 col-12 statement-wrapper">
+                            <div class="row statement-wrapper-logo">
+                                <div class="quote-wrapper u--center"
+                                    style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                                    <img src="/images/quote.svg">
                                 </div>
                             </div>
-                            <div class="col-md-10 col-12">
-                                <div class="c-spacer spacer--super hide"></div>
-                                <div class="c-spacer spacer--large hide"></div>
-                                <div class="slider">
-                                    <div class="slider-mask">
-                                        <div class="slide">
-                                            <h2 class="heading-body testimonial-heading font-playfair">
-                                                Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta
-                                                gravida at egettus. Nulla vitae elit libero, a pharetra augue.
-                                            </h2>
-                                            <div class="c-spacer"></div>
-                                            <div class="testimonial-author-wrapper">
-                                                <div class="testimonial-img three"></div>
-                                                <h3 class="testimonial-text font-playfair">Sarah Jones - Fly by Night
-                                                    Co.
-                                                </h3>
-                                            </div>
-                                            <div class="c-spacer"></div>
-                                            <div class="c-spacer"></div>
+                            <div class="row">
+                                <div class="test-statement proof-text">
+                                    <div class="statement-line intheline"></div>
+                                    <p class="hero-social-content-p intheline secondp">Don't just take our word for
+                                        it
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-12">
+                            <div class="c-spacer spacer--super hide"></div>
+                            <div class="c-spacer spacer--large hide"></div>
+                            <div class="slider">
+                                <div class="slider-mask">
+                                    <div class="slide">
+                                        <h2 class="heading-body testimonial-heading font-playfair">
+                                            Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta
+                                            gravida at egettus. Nulla vitae elit libero, a pharetra augue.
+                                        </h2>
+                                        <div class="c-spacer"></div>
+                                        <div class="testimonial-author-wrapper">
+                                            <div class="testimonial-img three"></div>
+                                            <h3 class="testimonial-text font-playfair">Sarah Jones - Fly by Night
+                                                Co.
+                                            </h3>
                                         </div>
-                                        <div class="slide">
-                                            <h2 class="heading-body testimonial-heading font-playfair">
-                                                Donec id elit non mi porta gravida at egettus. Nulla vitae elit libero,
-                                                a
-                                                pharetra augue
-                                            </h2>
-                                            <div class="c-spacer"></div>
-                                            <div class="testimonial-author-wrapper">
-                                                <div class="testimonial-img two"></div>
-                                                <h3 class="testimonial-text font-playfair">Judith Reel - Let's Go!</h3>
-                                            </div>
-                                            <!-- <div class="c-spacer"></div>
-                                        <div class="c-spacer"></div> -->
-                                        </div>
-                                        <div class="slide">
-                                            <h2 class="heading-body testimonial-heading font-playfair">
-                                                Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta
-                                                gravida at egettus.
-                                            </h2>
-                                            <div class="c-spacer"></div>
-                                            <div class="testimonial-author-wrapper">
-                                                <div class="testimonial-img one"></div>
-                                                <h3 class="testimonial-text font-playfair">Jamie Shuttle - Graff Inc.
-                                                </h3>
-                                            </div>
-                                            <div class="c-spacer"></div>
-                                            <div class="c-spacer"></div>
-                                        </div>
+                                        <div class="c-spacer"></div>
+                                        <div class="c-spacer"></div>
                                     </div>
+                                    <div class="slide">
+                                        <h2 class="heading-body testimonial-heading font-playfair">
+                                            Donec id elit non mi porta gravida at egettus. Nulla vitae elit libero,
+                                            a
+                                            pharetra augue
+                                        </h2>
+                                        <div class="c-spacer"></div>
+                                        <div class="testimonial-author-wrapper">
+                                            <div class="testimonial-img two"></div>
+                                            <h3 class="testimonial-text font-playfair">Judith Reel - Let's Go!</h3>
+                                        </div>
+                                        <!-- <div class="c-spacer"></div>
+                                        <div class="c-spacer"></div> -->
+                                    </div>
+                                    <div class="slide">
+                                        <h2 class="heading-body testimonial-heading font-playfair">
+                                            Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta
+                                            gravida at egettus.
+                                        </h2>
+                                        <div class="c-spacer"></div>
+                                        <div class="testimonial-author-wrapper">
+                                            <div class="testimonial-img one"></div>
+                                            <h3 class="testimonial-text font-playfair">Jamie Shuttle - Graff Inc.
+                                            </h3>
+                                        </div>
+                                        <div class="c-spacer"></div>
+                                        <div class="c-spacer"></div>
+                                    </div>
+                                </div>
 
-                                    <!-- <div class="slider-left-arrow slider-arrow-left"></div>
+                                <!-- <div class="slider-left-arrow slider-arrow-left"></div>
                                 <div class="slider-right-arrow slider-arrow-right"></div>
                                 <div class="slider-pagination slider-nav">
                                     <div class="slider-dot"></div>
                                     <div class="slider-active"></div>
                                     <div class="slider-dot"></div>
                                 </div> -->
-                                </div>
                             </div>
                         </div>
                     </div>
