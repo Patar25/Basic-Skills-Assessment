@@ -253,8 +253,13 @@ select:focus {
     position: static;
 }
 
+
 .icon-box {
     display: block;
+}
+
+.icon-box-row {
+    padding-top: 60px;
 }
 
 .icon-box-left {
@@ -424,6 +429,12 @@ img {
     padding: 32px 28px;
     float: left;
     border: 5px solid #fbe76c;
+
+}
+
+.statement-wrapper-logo {
+    padding-top: 60px;
+    padding-bottom: -60px;
 }
 
 @media screen and (max-width: 991px) {
@@ -435,7 +446,7 @@ img {
 
     .test-statement.proof-text {
         left: 0px;
-        bottom: -55px;
+        bottom: 55px;
         transform: rotate(90deg) translate(-440px, 145px);
     }
 
@@ -447,6 +458,10 @@ img {
 @media screen and (max-width: 767px) {
     .quote-wrapper {
         margin-left: 18px;
+    }
+
+    .statement-wrapper-logo {
+        transform: translate3d(0px, 60px, 0px);
     }
 }
 
@@ -467,7 +482,7 @@ img {
 .test-statement {
     position: absolute;
     left: 0px;
-    bottom: 0px;
+    bottom: 100px;
     transform: rotate(90deg) translate(-280px, 130px);
     color: #d3d3d3;
     text-transform: uppercase;
@@ -478,6 +493,9 @@ img {
     width: 200px;
 }
 
+.slider {
+    padding-top: 100px;
+}
 
 .slider-mask {
     position: relative;
@@ -611,6 +629,7 @@ img {
 }
 
 
+/* fade-in animations */
 
 @keyframes fade-in {
     from {
@@ -620,14 +639,17 @@ img {
 
     to {
         opacity: 1;
-        transform: translateY(-50px);
+        transform: translateY(-100px);
     }
 }
 
 .fade-in-element {
     animation: fade-in 1s ease;
+
 }
 
 .hidden {
     opacity: 0;
 }
+
+/*      */
